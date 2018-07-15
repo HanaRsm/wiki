@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {{page.title}} </title>
+</head>
+<body>
+
+    {% for pag in page %}
+<a href="{{pag.get_absolute_url}}">  <h1>{{pag.title}}</h1> </a>
+        
+        <ul>
+            
+               
+        
+            <li>
+                <p>{{pag.content}}</p>
+            </li>
+        </ul><br>
+    {% endfor %}
+</body>
+</html>
